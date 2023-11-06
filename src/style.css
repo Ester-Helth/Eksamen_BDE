@@ -16,7 +16,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #000000;
   text-decoration: inherit;
 }
 a:hover {
@@ -25,22 +25,18 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
+  background-color: #688cc8;
 }
 
 h1 {
   font-size: 3.2em;
-  line-height: 1.1;
+  margin: 0;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+h2 {
+  font-size: 1.4em;
+  margin: 0;
 }
 
 .logo {
@@ -78,11 +74,32 @@ button {
 button:hover {
   border-color: #646cff;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+
+
+/* Styling for divs */
+
+.siteContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
+.milesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kmContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Responsiveness */
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

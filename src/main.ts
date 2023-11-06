@@ -1,5 +1,12 @@
 import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
+
+
+// Explicit types
+let milesInput: number;
+// let kmInput: number;
+
+milesInput = 3;
+
+
 
 
