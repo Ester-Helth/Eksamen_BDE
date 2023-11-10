@@ -1,5 +1,3 @@
-import './style.css'
-
 console.log("TS code works")
 
 //Interfaces

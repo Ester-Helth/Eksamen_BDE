@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.calculator = void 0;
-require("./style.css");
 console.log("TS code works");
 var numCalc = 1.609; //The number that is used to calculate the numbers in the input fields
 //Functions
