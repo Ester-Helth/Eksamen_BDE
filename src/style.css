@@ -51,8 +51,8 @@ h2 {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.4em 0.6em;
-  margin: 0.8em 4.2em 0.8em 0;
+  padding: 8px 65px;
+  margin: 10px 0px;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
@@ -100,10 +100,7 @@ button:active {
 .alignLeft {
   display: flex;
   flex-direction: column;
-  padding: 0;
-  margin: 0;
-  align-items: left;
-  justify-content: left;
+  align-items: flex-start;
 }
 
 /* style for inputs */
