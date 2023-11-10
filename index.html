@@ -10,23 +10,48 @@
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
 
-    <!-- Top -->
+    <!-- Top title-->
     <div class="siteContainer">
       <h1>How to run with your American friend</h1>
-      <h2>Calculater from miles to km</h2>
        
       <!-- miles to km -->
-      <div class="milesContainer">
-      <h2>From</h2>
-          <input id="milesInput">
-      <h2>mile(s)</h2>
+      <div class="innerContainer">
+          <h2>Calculater from miles to km:</h2>
+
+          <div class="alignLeft">
+            <div class="milesContainer">
+              <input placeholder="write here" id="milesInput">
+              <h2>miles</h2>
+            </div>
+
+            <button id="">=</button>
+
+            <div class="kmContainer">
+              <h2 class="resultInKm h2result"></h2>
+              <h2>km</h2>
+            </div>
+          </div>
       </div>
 
-      <button id="">Convert</button>
+      <!--km to miles -->
+      <div class="innerContainer">
+        <h2>Calculater from km to miles:</h2>
 
-      <div class="kmContainer">
-      <h2>To</h2>
-      <h2>kilometer(s)</h2>
+        <div class="alignLeft">
+          <div class="kmContainer">
+            <input placeholder="write here" id="kmInput">
+            <h2>km</h2>
+          </div>
+
+          <button id="">=</button>
+
+          <div class="milesContainer">
+            <h2 class="resultInMiles h2result"></h2>
+            <h2>miles</h2>
+          </div>
+        </div>
+      </div>
+
      
       
 
