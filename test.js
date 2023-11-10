@@ -1,28 +1,27 @@
 import { Selector } from "testcafe"
 
-fixture`Demo`
-    .page("./index.html");
+fixture`#1 Testing the converter`
+    .page('./index.html');
 
-    // testings for TS application
+     // testing miles to km input
+    // test("Converter to km", async t => {
+    //     await t
+    //     .typeText(Selector("#milesInput"), '12')
 
-    test("backgroundcolor", async t => {
+    //     // Act
+    //     .click("#toKmButton")
+    // });
+
+    // #2 testing km to miles input (evt plus converter)
+
+    test("Converter to miles", async t => {
         await t
-        // expectning backgroundcolor
-        // .expect(Selector("body")).eql(background-color:#688cc8)
-    })
+        .typeText(Selector("#kmInput"), '19.308')
 
-    test("Converter", async t => {
-        await t
-        // pre-assertion that validates that no existing number is in the inputfield.
-        .expect(Selector("#milesInput").count).eql(0)
-        
-        // Write a test yourself that creates a new task, marks it as completed.
-        .typeText(Selector("#milesInput"), "20")
-        
         // Act
-        .pressKey("enter")
-        .click(Selector("body > div.siteContainer > div:nth-child(1) > div > button"))
+        .click("#toMilesButton")
 
         // Check if output number is converted correctly
-        .expect(Selector("#kmAnswer")).eql(36)
+        .expect(Selector("#resultInMiles").innerText).contains('12');
     });
+

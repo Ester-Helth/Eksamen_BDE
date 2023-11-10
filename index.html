@@ -5,10 +5,11 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
+    <link rel="stylesheet" href="./src/style.css">
   </head>
   <body>
     <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    
 
     <!-- Top title-->
     <div class="siteContainer">
@@ -24,10 +25,12 @@
               <h2>miles</h2>
             </div>
 
-            <button id="">=</button>
+            <button id="toKmButton">=</button>
 
             <div class="kmContainer">
-              <h2 class="resultInKm h2result"></h2>
+              <h2 class="h2result">
+                <output id="resultInKm"></output>
+              </h2>
               <h2>km</h2>
             </div>
           </div>
@@ -43,20 +46,22 @@
             <h2>km</h2>
           </div>
 
-          <button id="">=</button>
+          <button id="toMilesButton">=</button>
 
           <div class="milesContainer">
-            <h2 class="resultInMiles h2result"></h2>
+            <h2 class="h2result">
+              <output id="resultInMiles"></output>
+            </h2>
             <h2>miles</h2>
           </div>
         </div>
       </div>
 
      
-      
-
+    
     </div>
+    <script>var exports={};</script>
+    <script src="./src/main.js"></script>
   </body>
 </html>
 
-<script src="main.js"></script>
